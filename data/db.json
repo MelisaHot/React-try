@@ -17,6 +17,12 @@
       "body": "This is a new body. Bla bla bla.",
       "author": "Melisa",
       "id": 3
+    },
+    {
+      "title": "New blog adding",
+      "body": "this is a body of new blog ",
+      "author": "Melisa",
+      "id": 4
     }
   ]
 }
