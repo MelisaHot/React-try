@@ -7,6 +7,9 @@ function App() {
       <h1>HELLLO WORLD </h1>
       <img src={image} alt="nema slike" />
       <p> OVO JE PARAGRAF </p>
+      <p>OVO JE NOVI PARAGRAF</p>
+      <img src={image} alt="nema slike" />
+      <p> OVO JE PARAGRAF </p>
     </div>
   );
 }

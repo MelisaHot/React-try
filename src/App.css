@@ -8,7 +8,8 @@
 }
 
 body{
-  background-color: goldenrod;
+  background-color: rgb(231, 202, 127);
+  color: brown;
 }
 
 @media (prefers-reduced-motion: no-preference) {
