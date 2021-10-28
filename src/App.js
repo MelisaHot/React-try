@@ -1,16 +1,32 @@
-import image from './images/10.jpg';
-import './App.css';
-
+import Navbar from "./Navbar";
+import Home from './Home';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Create from './Create';
+import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
 function App() {
   return (
+    <Router>
     <div className="App">
-      <h1>HELLLO WORLD </h1>
-      <img src={image} alt="nema slike" />
-      <p> OVO JE PARAGRAF </p>
-      <p>OVO JE NOVI PARAGRAF</p>
-      <img src={image} alt="nema slike" />
-      <p> OVO JE PARAGRAF </p>
+      <Navbar />
+      <div className="content">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/create">
+            <Create />
+          </Route>
+          <Route path="/blogs/:id">
+            <BlogDetails />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </div>
     </div>
+  </Router>
   );
 }
 
