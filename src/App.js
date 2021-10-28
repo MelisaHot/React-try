@@ -14,6 +14,9 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
+          <Route exact path="/React-try">
+            <Home />
+          </Route>
           <Route path="/create">
             <Create />
           </Route>
